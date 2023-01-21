@@ -8,7 +8,8 @@
 }
 /* Library */
 .container{
-    width: 1110px;
+    max-width: 1140px;
+    padding: 0 30px;
     margin: 0 auto;
 }
 .d-flex{
@@ -86,7 +87,6 @@ ul li a:hover::before{
 }
 .header_big_text{
     max-width: 640px;
-    height: 278px;
     font-size: 72px;
     font-weight: 300;
     line-height: 97%;
@@ -97,6 +97,9 @@ ul li a:hover::before{
     color: white;
     font-family: 'Josefin Sans', sans-serif;
 }
+.sub_menu{
+    display: none;
+}
 /* header */
 
 /* The leader in interactive VR */
@@ -104,12 +107,18 @@ ul li a:hover::before{
     position: relative;
     margin: 160px auto 184px auto;
 }
+.vr .container img{
+    width: 100%;
+    max-width: 731px;
+    max-height: 500px;
+}
 .vr_box{
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 541px;
-    height: 317px;
+    width: 100%;
+    max-width: 541px;
+    max-height: 317px;
     padding: 96px 0 0 96px;
     background: white;
 }
@@ -133,7 +142,7 @@ ul li a:hover::before{
 .create_top{
     margin-bottom: 80px;
 }
-button{
+.btn1,.btn2{
     font-size: 14px;
     font-weight: 400;
     line-height: 100%;
@@ -146,7 +155,11 @@ button{
     border: 1px solid black;
     font-family: 'Alata', sans-serif;
 }
-button:hover{
+.btn2{
+    display: none;
+}
+.btn1:hover,
+.btn2:hover{
     color: white;
     background: black;
     cursor: pointer;
@@ -154,10 +167,12 @@ button:hover{
 .create_images{
     width: 100%;
     gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .img_box{
     position: relative;
-    min-width: 22.95%;
+    min-width: 22.5%;
     height: 450px;
     background-size: cover;
     background-position: center;
@@ -233,5 +248,8 @@ button:hover{
     line-height: 167%;
     color: #FFFFFF;
     opacity: 0.5;
+}
+.footer_menus{
+    display: none;
 }
 /* footer */
